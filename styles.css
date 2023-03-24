@@ -1,0 +1,486 @@
+*{
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+/*NAVBAR styling STARTS---------------------------------------------------------*/
+.nav-bar{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.logo{
+    display: flex;
+    padding: 5px;
+}
+
+.logo-image{
+    max-width: 100%;
+    width: 40px;
+}
+
+.logo .first-name{
+    margin-left: 5px;
+    margin-right: 5px;
+    font-weight: bolder;
+}
+
+.logo .last-name{
+    font-weight: lighter;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-around;
+
+    padding: 5px;
+    max-width: 50%;
+    width: 500px;
+}
+
+.nav h3{
+    font-weight: lighter;
+    cursor: pointer;
+    color: rgb(194, 193, 193);
+    transition-duration: 0.5s;
+}
+
+.nav h3:hover{
+    color: rgb(145, 145, 145);
+}
+
+/*-----------------------------------------------------------------*NAVBAR styling ENDS*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*------------------------------------------------------------------BODY STARTS-------------------------------------------------------*/
+.bio{
+    display: flex;
+    justify-content: space-around;
+
+    padding: 0px 164px;
+    margin-top: 50px;
+}
+
+.text{
+    position: relative;
+}
+
+.bio .my-image{
+    max-width: 100%;
+    width: 300px;
+
+    border-width: 10px;
+    border-style: double;
+    border-color: black;
+    
+    border-radius: 50%;
+}
+
+.anim{
+    color: grey;
+    line-height: 10px;
+    font-weight: lighter;
+}
+
+.name{
+    font-size: 30px;
+    line-height: 0px;
+}
+
+.full-info{
+    margin-top: 42px;
+}
+.bio .info{
+    max-width: 50%;
+}
+
+.info{
+    padding: 40px 0px;
+    display: flex;
+
+    flex-direction: column;
+}
+
+.links{
+    display: flex;
+
+    max-width: 62%;
+    justify-content: space-between;
+
+    margin-top: 24px;
+}
+
+.links a{
+    text-decoration: none;
+    color: black;
+    font-size: 13px;
+}
+
+.links div{
+    background-color: white;
+    border-style: solid;
+    border-color: black;
+    border-width: 1.5px;
+
+    padding: 10px 30px;
+    border-radius: 50px;
+
+    box-shadow: 0px 1px 2px black;
+}
+
+.links .button-1{
+    border-color: blue;
+    cursor: pointer;
+
+    transition-duration: 0.5s;
+}
+
+.links .button-1 a{
+    transition-duration: 0.5s
+}
+
+.links .button-2 a{
+    transition-duration: 0.5s
+}
+
+.links .button-2{
+    border-color: rgb(176, 176, 176);
+    cursor: pointer;
+
+    transition-duration: 0.5s;
+}
+
+.links .button-1:hover{
+    background-color: blue;
+    color: white;
+}
+
+.links .button-1:hover a{
+    color: white;
+}
+
+.links .button-2:hover{
+    background-color: rgb(176, 176, 176);
+    color: white;
+}
+
+.links .button-2:hover a{
+    color: white;
+}
+
+
+/*----------------------------------------------------------BODY ENDS----------------------------------------------------------------*/
+
+
+.What{
+    margin-left: 50px;
+    margin-top: 30px;
+    line-height: 3px;
+
+    color: gray;
+    display: inline-block;
+    font-size: 25px;
+    padding-bottom: 0px;
+    /* border-bottom: 2px #04acfc solid; */
+}
+
+.What:after {
+    content: "";
+    display: block;
+    width: 10%;
+    padding-top: 1em;
+    border-bottom: 4px solid #04acfc;
+    transition: 0.25s;
+}
+
+.What:hover:after{
+    width: 100%;
+}
+
+.What:hover{
+    color: black;
+}
+
+
+/*-------------------------------------------------------SECTION - 2-----------------------------------------------------------------*/
+
+.skills{
+    /* border: 2px salmon solid; */
+    margin: 30px;
+    display: flex;
+    grid-template-columns: 2;
+    margin-top: 10px;
+}
+
+.skills>div{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.skills>div>div{
+    display: flex;
+    /* border: 2px black solid; */
+    border-radius: 5px;
+    margin: 5px;
+    padding: 4px;
+
+    justify-content: space-between;
+}
+
+.scontent{
+    margin-left: 5px;
+}
+
+.slogo{
+    margin-top: 10px;
+    max-width: 100%;
+}
+
+.skill-4{
+    margin-top: 50px;
+}
+
+/*---------------------------------------------------SECTION - 2 ENDS-------------------------------------------------------------*/
+
+
+
+hr{
+    border:rgba(218, 218, 218, 0.741);
+    border-style: dotted none none;
+    border-width: 10px;
+    width: 5%;
+
+    margin-top: 80px;
+    margin-bottom: 20px;
+}
+
+.midhr{
+    margin-top: 80px;
+    margin-bottom: 70px;
+}
+
+button{
+    border: none;
+    background-color: white;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.ficon{
+    color: grey;
+}
+
+
+.follow{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+
+
+
+/*----------------------------------------------MEDIA PROPERTIES-----------------------------------------------------------------*/
+@media screen and (max-width: 768px) and (min-width: 417px){
+
+    .nav-bar{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .bio{
+        flex-direction: column;
+        align-items: center;
+        padding: 0px 5%;
+    }
+    .nav{
+        flex-direction: column;
+        align-items: center;
+    }
+    .links{
+        flex-direction: column;
+        max-width: 86%;
+    }
+
+    .links div{
+        margin: 10px 0px;
+        text-align: center;
+    }
+
+    .bio .image{
+        width: 50%;
+    }
+
+}
+
+@media screen and (max-width: 1100px) and (min-width : 768px) {
+
+    .bio{
+        flex-direction: column;
+        align-items: center;
+        padding: 0px 5%;
+    }
+    .links{
+        flex-direction: row;
+        flex-grow: 1;
+        max-width: 90%;
+    }
+
+    .links div{
+        margin: 10px 0px;
+        flex-grow: 2;
+        text-align: center;
+
+        margin: 10px;
+    }
+
+    .bio .image{
+        width: 50%;
+    }
+
+}
+
+@media screen and (min-width: 1100px) and (max-width : 1190px) {
+    .links{
+        display: flex;
+    
+        max-width: 70%;
+        justify-content: space-between;
+    
+        margin-top: 24px;
+    }
+    .links div{
+        background-color: white;
+        border-style: solid;
+        border-color: black;
+        border-width: 1.5px;
+    
+        padding: 10px 30px;
+        border-radius: 50px;
+    
+        box-shadow: 0px 1px 2px black;
+    }
+}
+
+@media screen and (max-width: 416px) and (min-width: 377px){
+
+    .nav-bar{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .bio{
+        flex-direction: column;
+        align-items: center;
+        padding: 0px 0%;
+    }
+    .nav{
+        flex-direction: column;
+        align-items: center;
+    }
+    .links{
+        flex-direction: column;
+        max-width: 90%;
+    }
+
+    .links div{
+        margin: 10px 0px;
+        text-align: center;
+    }
+
+    .bio .image{
+        width: 50%;
+    }
+
+    .info{
+        max-width: 100%;
+        width: 100%;
+    }
+    .text{
+        max-width: 100%;
+        width: fit-content;
+    }
+
+}
+
+@media screen and (max-width: 377px) and (min-width: 100px){
+
+    .nav-bar{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .bio{
+        flex-direction: column;
+        align-items: center;
+        padding: 0px 0%;
+    }
+    .nav{
+        flex-direction: column;
+        align-items: center;
+    }
+    .links{
+        flex-direction: column;
+        max-width: 90%;
+    }
+
+    .links div{
+        margin: 5px 0px;
+        text-align: center;
+    }
+
+    .bio .image{
+        width: 50%;
+    }
+
+    .info{
+        max-width: 100%;
+        width: 100%;
+    }
+    .text{
+        max-width: 100%;
+        width: fit-content;
+    }
+
+    .info .text .name{
+        font-size: 25px;
+    }
+
+}
+
+@media screen and (max-width: 530px) {
+    .skills{
+
+        margin-top: 10px;
+        flex-direction: column;
+    }
+}
+
+
+@media screen and (max-width: 790px) {
+    hr{
+        border-width: 10px;
+        width: 20%
+    }
+}
+/*-----------------------------------------------------END OF MEDIA PROPERTIES---------------------------------------------------*/
+
